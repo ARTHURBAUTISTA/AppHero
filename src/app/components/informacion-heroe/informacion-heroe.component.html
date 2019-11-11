@@ -1,0 +1,36 @@
+<div class="container">
+  <div class="jumbotron">
+    <div class="row">
+      <div class="col-6">
+        <img src="{{HeroeFiltrado.img}}" alt="" style="width: 100%;" id="imagen">
+      </div>
+      <div class="col-6">
+          <div class="row mb-3">
+        <div class="col-12 text-right">
+          
+            <button type="button" name="" id="" class="btn btn-light btn-lg" routerLink="/heroes">Regresar</button>
+          </div>
+        </div>
+        <div class="row justify-content-md-center">
+
+        </div>
+        <div class="row justify-content-md-center">
+          <div class="alert alert-success" role="alert">
+            <h4 class="alert-heading">{{HeroeFiltrado.nombre}}</h4>
+            <hr>
+            <p>Bio: {{HeroeFiltrado.bio}}</p>
+            <hr>
+            <p class="mb-0">Aparición: {{HeroeFiltrado.aparicion}} </p>
+            <p class="mb-0">Casa: </p>
+            <img src="assets/img/marvel.png" alt="" style="width: 50%;" id="imagen" *ngIf="HeroeFiltrado.casa == 'Marvel'">
+            
+            <img src="assets/img/dc.png" alt="" style="width: 50%;" id="imagen" *ngIf="HeroeFiltrado.casa == 'DC'">
+          </div>
+        </div>
+
+      </div>
+
+
+    </div>
+  </div>
+</div>
